@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Monospace, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.bar {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  bottom: 1rem;
+  width: 4rem;
+  height: 20rem;
+  border: 0.2rem solid #e7e7e7ff;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  background-color: transparent;
+}
+
+#resetBtn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  color: white;
+  border: 0.2rem solid #e2e2e2ff;
+  border-radius: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#speedBar {
+  right: 1rem;
+}
+
+#speedValue {
+  width: 100%;
+  height: 0%;
+  position: relative;
+  overflow: hidden;
+}
+
+#speedBg {
+  position: absolute;
+  bottom: 0;
+  height: 20rem;
+  width: 4rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(to top, #4caf50, #a60000ff);
+}
+
+#limit {
+  position: absolute;
+  bottom: 75%; /* Adjust this value to set the limit position */
+  width: 100%;
+  height: 0.2rem;
+  background-color: red;
+}
+
+#progressBar {
+  left: 1rem;
+}
+
+#progressValue {
+  width: 100%;
+  height: 100%;
+  background-color: #92851eff;
+  border-radius: 0.8rem;
+}
+
+#timer {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  color: #585858ff;
+}
